@@ -85,6 +85,7 @@ public class Main extends JFrame implements KeyListener{
 	
 	public static void main(String args[]) {
 		new Main();
+		OC2 obj = new OC2(true);
 		
 		
 		
@@ -96,6 +97,9 @@ public class Main extends JFrame implements KeyListener{
 		
 		
 		while (true) {
+			if(obj.Verificar() == false) {
+				break;
+			}
 		}	
 	}//main
 	@Override

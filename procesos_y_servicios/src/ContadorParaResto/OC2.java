@@ -1,13 +1,21 @@
 package ContadorParaResto;
 
 public class OC2 {
+	private boolean vf;
+	
+	public OC2(boolean vf) {
+		super();
+		this.vf = vf;
+	}
+
 	OC2(){}
 	
-	boolean Terminado(boolean vf) {
-		return vf;
+	void Terminado(boolean vf) {
+		this.vf = vf;
 	}
 	
-	void pararHilos() {
-		
+	boolean Verificar() {
+		return this.vf;
 	}
+
 }

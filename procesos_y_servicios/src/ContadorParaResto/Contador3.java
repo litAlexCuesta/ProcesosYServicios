@@ -18,6 +18,7 @@ public void run() {
 	while(true) {
 		cont3.setText("" + cont);
 		if(cont == 0) {
+			obj.Terminado(false);
 			break;
 		}
 		cont --;

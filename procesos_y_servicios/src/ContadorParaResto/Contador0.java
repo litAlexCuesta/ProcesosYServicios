@@ -20,6 +20,7 @@ public class Contador0 extends Thread {
 		while (true) {
 			cont0.setText("" + cont);
 			if(cont == 500) {
+				obj.Terminado(false);
 				break;
 			}
 			cont++;
