@@ -8,8 +8,9 @@ public class Main {
 		Productor p = new Productor(cola);
 		Consumidor c = new Consumidor(cola);
 		
-		p.start();
 		c.start();
+		p.start();
+		
 
 	}
 

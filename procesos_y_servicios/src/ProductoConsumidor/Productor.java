@@ -9,13 +9,17 @@ public class Productor extends Thread{
 	
 	public void run() {
 		for (int i = 0; i < 10; i++) {
-			try {
-				sleep(200);
-			} catch (Exception e) {
-				// TODO: handle exception
+			while(cola.hayDato()) {
+				try {
+					sleep(300);
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+					cola.put(i);
+					System.out.println(i);
 			}
-			cola.put(i);
-			System.out.println(i);
+			
+			
 		}
 	}
 }
